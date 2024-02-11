@@ -8,9 +8,9 @@ The dataset includes:
 - 763 sentences using "ბარი" as a "shovel"
 - 1846 sentences using "ბარი" as a "lowland"
 - 3320 sentences using "ბარი" as a "cafe"
-- 1593 sentences where the homonym used in a different context
+- 1593 sentences where the homonym is used in a different context
 
 ## Models
-- Transformers -- Fill-Mask
-- Transformers -- Text Classification
-- Recurrent Neural Networks -- LSTM
+- Transformers &mdash; Fill-Mask
+- Transformers &mdash; Text Classification
+- Recurrent Neural Networks &mdash; LSTM
