@@ -5,10 +5,10 @@ At this point I've considered only the homonym: "ბარი" and it's differen
 
 The dataset includes:
 
-- 763 sentences using "ბარი" as a "shovel"
-- 1846 sentences using "ბარი" as a "lowland"
-- 3320 sentences using "ბარი" as a "cafe"
-- 1593 sentences where the homonym is used in a different context
+- 763 sentences using "ბარი" as a "shovel" labaled with 0
+- 1846 sentences using "ბარი" as a "lowland" labeld with 1
+- 3320 sentences using "ბარი" as a "cafe" labeled with 2 
+- 1593 sentences where the homonym is used in a different context, labeled with 3 (Although these sentences could be further classified by the definitions of the homonyms, for this project I've ignored other usages).
 
 ## Models
 - Transformers &mdash; Fill-Mask
