@@ -13,4 +13,6 @@ The dataset includes:
 ## Models
 - Transformers &mdash; Fill-Mask
 - Transformers &mdash; Text Classification
-- Recurrent Neural Networks &mdash; LSTM
+- Recurrent neural networks &mdash; LSTM
+
+I've also incorporated the Word2Vec model trained on the CC100 Georgian dataset, utilizing it for word vectorization in my recurrent neural network.
