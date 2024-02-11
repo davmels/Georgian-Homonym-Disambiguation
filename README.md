@@ -1,4 +1,4 @@
-# Georgian-homonym-disambiguation
+# Georgian-Homonym-Disambiguation
 This repository contains all the training and testing datasets for the Georgian homonym disambiguation task. Additionally, it includes the code for model creation, training and testing.
 ## Dataset
 At this point I've considered only the homonym: "ბარი" and it's different grammatical forms obtaining 7522 sentences.
