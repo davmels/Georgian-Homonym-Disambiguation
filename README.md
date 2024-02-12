@@ -3,7 +3,9 @@ This repository contains all the training and testing datasets for the Georgian 
 
 For more specific details you can read my article, also listed in the repository.
 
-For downloading pre-trained transformer model visit my <a href="https://huggingface.co/davmel/ka_homonym_disambiguation">huggingface.</a>
+For downloading pre-trained transformer model visit my <a href="https://huggingface.co/davmel/ka_homonym_disambiguation_TC">huggingface.</a>
+
+You can try out the model <a href="https://huggingface.co/spaces/davmel/Georgian_Homonym_Disambiguation">here</a>
 ## Dataset
 At this point I've considered only the homonym: "ბარი" and it's different grammatical forms obtaining 7522 sentences.
 
