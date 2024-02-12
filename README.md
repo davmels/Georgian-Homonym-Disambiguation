@@ -19,4 +19,4 @@ The dataset includes:
 - Transformers &mdash; Text Classification
 - Recurrent neural networks &mdash; LSTM
 
-I've incorporated the Word2Vec model trained on the CC100 Georgian dataset, utilizing it for word vectorization in my recurrent neural network. So you will have to download the word2vec model first, and integrate in your local directory for the LSTM model to run.
+I've incorporated the Word2Vec model trained on the CC100 Georgian dataset, utilizing it for word vectorization in my recurrent neural network. The code for training LSTM will automatically start downloading the Word2Vec model from this <a href="https://huggingface.co/davmel/ka_word2vec/tree/main">repository</a>. 
