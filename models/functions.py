@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from gensim.models import Word2Vec
 
 '''
     Utility functions -- are used for data preprocessing.
@@ -92,8 +91,3 @@ def targets_one_hot(tar, hou):
         hey[tar[i]] = 1
         ret.append(hey)
     return ret
-
-
-
-def loadWord2VecModel(filename):
-    return Word2Vec.load(filename)
