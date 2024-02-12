@@ -10,7 +10,9 @@ def train_LSTM(targets = [0, 1, 2], show=True, equal = False, showConfMat = Fals
     multi_class = True if N > 2 else False
     if show:
         print("loading model")
-    model = loadWord2VecModel('models/word2vec/model_CC_128-10.model')
+
+    model = load_w2v_model()
+
     if show:
         print("preprocessing data")
     df = get_data_specific_targets('datasets/dataset.xlsx', targets = targets)
@@ -82,3 +84,21 @@ def train_LSTM(targets = [0, 1, 2], show=True, equal = False, showConfMat = Fals
 
     return model
 
+'''
+    this function downloads remotely stored word2vec model from: https://huggingface.co/davmel/ka_word2vec
+'''
+def load_w2v_model():
+    from gensim.models import Word2Vec
+    from huggingface_hub import hf_hub_download
+    repo_id = "davmel/ka_word2vec"
+
+    filename = "word2vec/model_CC_128-10.model"
+    filename2 = "word2vec/model_CC_128-10.model.syn1neg.npy"
+    filename3 = "word2vec/model_CC_128-10.model.wv.vectors.npy"
+
+    # Downloading the files
+    hf_hub_download(repo_id=repo_id, filename=filename2)
+    hf_hub_download(repo_id=repo_id, filename=filename3)
+    wv2 = hf_hub_download(repo_id=repo_id, filename=filename)
+    model = Word2Vec.load(wv2)
+    return model
