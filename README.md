@@ -2,6 +2,8 @@
 This repository contains all the training and testing datasets for the Georgian homonym disambiguation task. Additionally, it includes the code for model creation, training and testing.
 
 For more specific details you can read my article, also listed in the repository.
+
+For downloading pre-trained transformer models visit my <a href="https://huggingface.co/davmel">huggingface.</a>
 ## Dataset
 At this point I've considered only the homonym: "ბარი" and it's different grammatical forms obtaining 7522 sentences.
 
