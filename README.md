@@ -22,3 +22,5 @@ The dataset includes:
 - Recurrent neural networks &mdash; LSTM
 
 I've incorporated the Word2Vec model trained on the CC100 Georgian dataset, utilizing it for word vectorization in my recurrent neural network. The code for training LSTM will automatically start downloading the Word2Vec model from this <a href="https://huggingface.co/davmel/ka_word2vec/tree/main">repository</a>. 
+
+These models, which are trained on 80% of the dataset, achieve 95% accuracy on a test set consisting of the remaining sentences.
